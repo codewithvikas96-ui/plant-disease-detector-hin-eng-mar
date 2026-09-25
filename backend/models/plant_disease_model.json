@@ -1,0 +1,72 @@
+{
+  "val_accuracy": 0.9868420958518982,
+  "lab_accuracy": 0.9868420958518982,
+  "field_accuracy": 0.6652542352676392,
+  "field_top3": 0.8771186470985413,
+  "before": {
+    "field_accuracy": 0.30084747076034546,
+    "field_top3": 0.5805084705352783,
+    "lab_accuracy": 0.9956140518188477,
+    "base_val_accuracy": 0.9953042997882331
+  },
+  "field_test_set": "PlantDoc test (236 images)",
+  "lab_test_set": "PlantVillage sample holdout (456 images)",
+  "temperature": 0.7727930545806885,
+  "ood": {
+    "leaf_flag_rate": 0.04826732724905014,
+    "non_leaf_images": 60,
+    "flagged": 0.800000011920929
+  },
+  "finetune": {
+    "epochs": 6,
+    "lr": 0.0002,
+    "batch_size": 32,
+    "plantdoc_train": 1984,
+    "plantvillage_train": 1824,
+    "extra_train": 0,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 1.7318749572000196,
+        "train_acc": 0.6580141129032258,
+        "field_val_acc": 0.5369318127632141,
+        "lab_val_acc": 0.9868420958518982
+      },
+      {
+        "epoch": 2,
+        "train_loss": 1.3553074338743765,
+        "train_acc": 0.7729334677419355,
+        "field_val_acc": 0.5710227489471436,
+        "lab_val_acc": 0.984649121761322
+      },
+      {
+        "epoch": 3,
+        "train_loss": 1.2124585667925496,
+        "train_acc": 0.8341733870967742,
+        "field_val_acc": 0.6278409361839294,
+        "lab_val_acc": 0.9758771657943726
+      },
+      {
+        "epoch": 4,
+        "train_loss": 1.1381102088958985,
+        "train_acc": 0.8523185483870968,
+        "field_val_acc": 0.6420454382896423,
+        "lab_val_acc": 0.9868420958518982
+      },
+      {
+        "epoch": 5,
+        "train_loss": 1.092336063904147,
+        "train_acc": 0.8707157258064516,
+        "field_val_acc": 0.6448863744735718,
+        "lab_val_acc": 0.9824561476707458
+      },
+      {
+        "epoch": 6,
+        "train_loss": 1.088870481617989,
+        "train_acc": 0.8709677419354839,
+        "field_val_acc": 0.6420454382896423,
+        "lab_val_acc": 0.9824561476707458
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "note": "Low-cost organic and biological options, keyed by remedies.json pathogen_type. Bio-agents work best as prevention or at the very first symptom; for a fast-spreading attack they support, not replace, the chemical remedy."
+  },
+  "fungal": {
+    "items": [
+      {"product": "Pseudomonas fluorescens 1% WP", "dose": 10, "unit": "g"},
+      {"product": "Neem oil 1500 ppm", "dose": 5, "unit": "ml"}
+    ],
+    "text": {
+      "en": "Spray Pseudomonas fluorescens 1% WP at 10 g per litre, or neem oil 1500 ppm at 5 ml per litre with a little soap, every 7-10 days. Remove infected leaves first. Apply Trichoderma viride mixed in compost to the soil to keep the fungus down.",
+      "hi": "स्यूडोमोनास फ्लोरेसेंस 1% WP 10 ग्राम प्रति लीटर, या नीम तेल 1500 ppm 5 मिली प्रति लीटर थोड़े साबुन के साथ हर 7-10 दिन पर छिड़कें। पहले संक्रमित पत्तियाँ हटाएँ। मिट्टी में कम्पोस्ट के साथ ट्राइकोडर्मा विरिडी मिलाएँ।",
+      "mr": "स्यूडोमोनास फ्लुरोसेन्स १% WP १० ग्रॅम प्रति लिटर, किंवा निंबोळी तेल १५०० ppm ५ मिली प्रति लिटर थोड्या साबणासह दर ७-१० दिवसांनी फवारा. आधी रोगट पाने काढा. जमिनीत शेणखतासोबत ट्रायकोडर्मा व्हिरिडी मिसळा."
+    }
+  },
+  "oomycete": {
+    "items": [
+      {"product": "Pseudomonas fluorescens 1% WP", "dose": 10, "unit": "g"},
+      {"product": "Bordeaux mixture 1%", "dose": 1, "unit": "l"}
+    ],
+    "text": {
+      "en": "Bordeaux mixture 1% (allowed in organic farming) and Pseudomonas fluorescens 10 g per litre protect healthy leaves, but late blight spreads within days — if it is already visible, use the chemical remedy the same day.",
+      "hi": "1% बोर्डो मिश्रण (जैविक खेती में अनुमत) और स्यूडोमोनास फ्लोरेसेंस 10 ग्राम प्रति लीटर स्वस्थ पत्तियों को बचाते हैं, लेकिन पछेती झुलसा कुछ ही दिनों में फैलता है — यदि दिख रहा है तो उसी दिन रासायनिक उपाय करें।",
+      "mr": "१% बोर्डो मिश्रण (सेंद्रिय शेतीत परवानगी) आणि स्यूडोमोनास फ्लुरोसेन्स १० ग्रॅम प्रति लिटर निरोगी पानांचे रक्षण करतात, पण उशिरा येणारा करपा काही दिवसांत पसरतो — दिसत असल्यास त्याच दिवशी रासायनिक उपाय करा."
+    }
+  },
+  "bacterial": {
+    "items": [
+      {"product": "Pseudomonas fluorescens 1% WP", "dose": 10, "unit": "g"},
+      {"product": "Bacillus subtilis 1.5% WP", "dose": 10, "unit": "g"}
+    ],
+    "text": {
+      "en": "Spray Pseudomonas fluorescens 1% WP or Bacillus subtilis at 10 g per litre every 7-10 days. Copper sprays such as Bordeaux mixture are also allowed in organic farming. Cut out and burn infected parts, and never work in the crop while leaves are wet.",
+      "hi": "स्यूडोमोनास फ्लोरेसेंस 1% WP या बैसिलस सबटिलिस 10 ग्राम प्रति लीटर हर 7-10 दिन पर छिड़कें। बोर्डो मिश्रण जैसे कॉपर छिड़काव भी जैविक खेती में अनुमत हैं। संक्रमित भाग काटकर जलाएँ, और गीली पत्तियों के समय फसल में काम न करें।",
+      "mr": "स्यूडोमोनास फ्लुरोसेन्स १% WP किंवा बॅसिलस सबटिलिस १० ग्रॅम प्रति लिटर दर ७-१० दिवसांनी फवारा. बोर्डो मिश्रणासारखी कॉपर फवारणीही सेंद्रिय शेतीत चालते. बाधित भाग कापून जाळा आणि पाने ओली असताना पिकात काम करू नका."
+    }
+  },
+  "vector": {
+    "items": [
+      {"product": "Neem oil 1500 ppm", "dose": 5, "unit": "ml"},
+      {"product": "Verticillium lecanii 1.15% WP", "dose": 5, "unit": "g"}
+    ],
+    "text": {
+      "en": "The virus itself cannot be cured, so stop the insects that spread it: neem oil 1500 ppm at 5 ml per litre, or Verticillium lecanii at 5 g per litre in the evening, plus 10-12 yellow sticky traps per acre. Grow a border of maize or sorghum and uproot infected plants early.",
+      "hi": "विषाणु का इलाज नहीं हो सकता, इसलिए उसे फैलाने वाले कीटों को रोकें: नीम तेल 1500 ppm 5 मिली प्रति लीटर, या शाम को वर्टिसिलियम लेकानी 5 ग्राम प्रति लीटर, और प्रति एकड़ 10-12 पीले चिपचिपे जाल। किनारे पर मक्का या ज्वार लगाएँ और संक्रमित पौधे जल्दी उखाड़ें।",
+      "mr": "विषाणूवर उपचार नाही, म्हणून तो पसरवणाऱ्या किडी थांबवा: निंबोळी तेल १५०० ppm ५ मिली प्रति लिटर, किंवा संध्याकाळी व्हर्टिसिलियम लेकानी ५ ग्रॅम प्रति लिटर, आणि एकरी १०-१२ पिवळे चिकट सापळे. कडेने मका किंवा ज्वारी लावा आणि बाधित झाडे लवकर उपटा."
+    }
+  },
+  "mite": {
+    "items": [
+      {"product": "Neem oil 1500 ppm", "dose": 5, "unit": "ml"}
+    ],
+    "text": {
+      "en": "Spray neem oil 1500 ppm at 5 ml per litre with a little soap on the underside of the leaves, twice at 7-day gaps. A strong water spray on the leaf underside also knocks mites off. Keep the crop well watered, since mites thrive on dry, stressed plants.",
+      "hi": "नीम तेल 1500 ppm 5 मिली प्रति लीटर थोड़े साबुन के साथ पत्तियों की निचली सतह पर 7 दिन के अंतर पर दो बार छिड़कें। पत्ती के नीचे पानी की तेज़ धार से भी माइट गिर जाते हैं। फसल में नमी बनाए रखें, सूखे पौधों पर माइट ज़्यादा बढ़ते हैं।",
+      "mr": "निंबोळी तेल १५०० ppm ५ मिली प्रति लिटर थोड्या साबणासह पानांच्या खालच्या बाजूला ७ दिवसांच्या अंतराने दोनदा फवारा. पानाखाली पाण्याच्या जोरदार फवाऱ्यानेही कोळी गळतात. पिकाला पुरेसे पाणी द्या, कोरड्या झाडांवर कोळी जास्त वाढतात."
+    }
+  }
+}

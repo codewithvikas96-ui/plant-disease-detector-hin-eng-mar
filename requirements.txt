@@ -12,3 +12,8 @@ torchvision==0.21.0
 # Server-side Marathi/Hindi text-to-speech (fallback when the browser
 # has no mr-IN / hi-IN voice installed)
 gTTS==2.5.4
+
+# Optional AI assistant (chat, vision second opinion, voice questions).
+# Only active when GROQ_API_KEY is set in .env.
+groq==1.7.0
+python-dotenv==1.2.3

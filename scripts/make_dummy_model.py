@@ -19,7 +19,7 @@ import torch
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 
-from model import DEFAULT_ARCH, IMG_SIZE, build_model, save_checkpoint  # noqa: E402
+from app.ml.model import DEFAULT_ARCH, IMG_SIZE, build_model, save_checkpoint  # noqa: E402
 
 remedies = json.loads((ROOT / "backend" / "data" / "remedies.json").read_text(encoding="utf-8"))
 class_names = sorted(k for k in remedies if not k.startswith("_"))

@@ -71,13 +71,56 @@ def eval_transforms(img_size: int = IMG_SIZE) -> transforms.Compose:
     ])
 
 
+def final_linear(model: nn.Module) -> nn.Linear:
+    """The classification layer, whatever the backbone."""
+    for module in reversed(list(model.modules())):
+        if isinstance(module, nn.Linear):
+            return module
+    raise ValueError("model has no Linear layer")
+
+
+def cam_layer(model: nn.Module, arch: str) -> nn.Module:
+    """Last convolutional block — the layer Grad-CAM explains.
+
+    It is the deepest layer that still has a spatial map (7x7 at 224 px), so it
+    is where 'which part of the leaf mattered' can still be read off.
+    """
+    if arch in ("mobilenet_v3_large", "efficientnet_b0"):
+        return model.features[-1]
+    if arch == "resnet18":
+        return model.layer4
+    raise ValueError(f"Unknown architecture: {arch}")
+
+
+class FeatureTap:
+    """Captures the input to the final Linear layer (the penultimate embedding).
+
+    Used for out-of-distribution detection: a photo of a hand still gets a
+    softmax over 38 diseases, but its embedding sits far from every class.
+    """
+
+    def __init__(self, model: nn.Module) -> None:
+        self.features: torch.Tensor | None = None
+        self._handle = final_linear(model).register_forward_hook(self._hook)
+
+    def _hook(self, _module, inputs, _output) -> None:
+        self.features = inputs[0]
+
+    def close(self) -> None:
+        self._handle.remove()
+
+
 def save_checkpoint(path, model: nn.Module, class_names: list[str], arch: str,
-                    img_size: int, metrics: dict) -> None:
-    """Write a self-describing checkpoint the server can load without extra files."""
+                    img_size: int, metrics: dict, **extra) -> None:
+    """Write a self-describing checkpoint the server can load without extra files.
+
+    `extra` carries optional calibration data such as `temperature` and `ood`.
+    """
     torch.save({
         "arch": arch,
         "img_size": img_size,
         "class_names": class_names,
         "state_dict": model.state_dict(),
         "metrics": metrics,
+        **extra,
     }, path)

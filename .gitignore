@@ -1,10 +1,12 @@
 .venv/
 __pycache__/
+.pytest_cache/
 *.pyc
 
 # Trained weights are ~17 MB — keep them out of git, they come from Colab
 backend/models/*.pt
-backend/data/tts_cache/
+# Runtime state the server writes (TTS cache, outbreak reports)
+backend/var/
 
 # Portable cloudflared binary (~55 MB) — re-download, don't commit
 tools/
@@ -14,3 +16,9 @@ tools/
 Thumbs.db
 .vscode/
 .idea/
+
+*.env
+venv/
+
+# Datasets downloaded for fine-tuning (large, re-fetchable)
+training/data/

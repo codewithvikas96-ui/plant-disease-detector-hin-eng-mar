@@ -21,5 +21,5 @@ echo Open on a phone:   see the "lan_url" printed below (same Wi-Fi)
 echo Press Ctrl+C to stop.
 echo.
 
-.venv\Scripts\python.exe -m uvicorn main:app --app-dir backend --host 0.0.0.0 --port 8000
+.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port 8000
 pause

@@ -30,6 +30,10 @@ https://champions-demanding-fioricet-dozen.trycloudflare.com
 That address works from any phone on any network — mobile data included, no shared Wi-Fi
 needed. HTTPS is real, so *Add to Home screen* and the service worker both work.
 
+It is also the only way a phone gets the **whole** app: browsers allow the live camera guide,
+location (spray timing, outbreak map) and the microphone (voice questions) only on `https://`.
+On the plain `http://192.168.x.x` Wi-Fi address those fall back or hide.
+
 **Keep both windows open.** Closing either one breaks the link.
 
 ---
